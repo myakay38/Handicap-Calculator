@@ -8,7 +8,9 @@
     body {
         background-color: white;
         padding: 1em;
+        font-size: 150%;
     }
+
     #header {
         color: white;
         background-color: rgba(0, 0, 0, 0.416);
@@ -18,6 +20,49 @@
         padding-top: 2em;
         text-align: center;
         align-content: center;
+    }
+    #whatHCP {
+        color: white;
+        background-color: green;
+        min-width: 20%;
+        max-width: 40%;
+        float: right;
+        padding: 1em;
+    }
+
+    #keyFeatures {
+        max-width: 60%;
+        float: left;
+    }
+
+    #whatHCP {
+        width: 100%;
+    }
+
+    #dataMgmt {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        grid-template-columns: auto auto;
+    }
+
+    #dataImg {
+        /* max-width: 50%;
+        margin-left: 0;
+        margin-top: 2em; */
+
+        width: 100%;
+    }
+
+    #dmText{
+        min-width: 40%;
+        max-width: 60%;
+    }
+
+    #dataPics {
+        padding: 0;
+        padding-top: 1em;
     }
 
 </style>
@@ -32,6 +77,38 @@
         I developed the Handicap Calculator for Stone Ridge Golf Course (Elliot Lake, ON) in Summer 2024. I met with clients to discuss requirements in early January. They wanted an affordable system to track members' game data and calculate their handicaps. 
     </p>
     <hr>
+
+    <div id="keyFeatures">
+        <h2>Key Features</h2>
+        <li>fjkdl</li>
+        <li>djfkdjf;</li>
+        <li>fjkdlja</li>
+    </div>
+
+    <div id="whatHCP">
+        <h2>What Is a Golf Handicap?</h2>
+        <p>
+            If you don't golf, the short answer is a number which indicates how good a golfer someone is.
+
+            Golf courses, and each individual hole, have a rating called "par". It indicates the number of strokes it takes an "A-level" golfer to complete the course/hole. (If you shoot under par, that's an A+!) Most golfers play several strokes over par for the course. Your handicap indicates how many strokes over par it should take you to complete a course, based on your average performance. Golfers can apply their handicaps in a match in order to compete against golfers of different skill levels.
+        </p>
+    </div>
+
+    
+
+    <div id="dataMgmt">
+        <div id="dataPics">
+            <img id="dataImg" src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
+        </div>
+        
+        <div id="dmTxt">
+            <h2>Data Management</h2>
+            <p>
+                The clients wanted an efficient way to copy and paste all their data from an existing spreadsheet, and allow an administrator of average technical profficiency to easily manipulate it. Even though it was not the most efficient way to store data for the program, storing the data in an Excel sheet met the client's requirements. Thus, I used Apache POI to programmatically read and write an xlsx file.
+            </p>
+        </div>
+        
+    </div>
     
 
 
