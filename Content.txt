@@ -2,6 +2,12 @@ INTRODUCTION
 I developed the Handicap Calculator for Stone Ridge Golf Course (Elliot Lake, ON) in Summer 2024. I met with clients to discuss requirements in early January. They wanted an affordable system to track members' game data and calculate their handicaps. 
 
 KEY FEATURES
+-Simple, user friendly design
+-On-screen keyboard for touchscreen implementation
+-Password-protected admin panel
+-Leaderboard display of golfers' handicaps
+-Data can be manipulated through the GUI or by directly editing the excel sheet
+-
 
 
 DATA MANAGEMENT

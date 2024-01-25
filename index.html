@@ -11,15 +11,36 @@
         font-size: 150%;
     }
 
+    #bg {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 20em;
+        padding: 0;
+    }
+
+    #bg img {
+        margin: auto;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit:cover;
+    }
+
     #header {
         color: white;
-        background-color: rgba(0, 0, 0, 0.416);
+        background-color: rgba(0, 0, 0, 0.555);
         height: 20em;
-        justify-content: center;
-        padding: 1em;
-        padding-top: 2em;
+
+        position: absolute;
+        top: 1.25em;
+        left: 1.25em;
+        width: calc(100% - 2.5em);
+
         text-align: center;
-        align-content: center;
+        vertical-align: middle;
+        line-height: 20em;
     }
 
 
@@ -33,8 +54,13 @@
     }
 
     #keyFeatures {
-        max-width: 60%;
+        max-width: 50%;
         float: left;
+    }
+
+    li {
+        line-height: 2em;
+        list-style-position:outside;
     }
 
     #whatHCP {
@@ -75,6 +101,10 @@
 </style>
 
 <body>
+
+    <div id="bg">
+        <img src="https://github.com/myakay38/Handicap-Calculator/blob/main/golfCoursePic.jpg?raw=true" alt="The background picture for the handicap calculator program">
+    </div>
     <div id="header">
         <h1>Handicap Calculator</h1>
     </div>
@@ -87,9 +117,15 @@
 
     <div id="keyFeatures">
         <h2>Key Features</h2>
-        <li>fjkdl</li>
-        <li>djfkdjf;</li>
-        <li>fjkdlja</li>
+        <ul>
+            <li>Simple, user friendly design</li>
+            <li>On-screen keyboard for touchscreen implementation</li>
+            <li>Password-protected admin panel</li>
+            <li>Leaderboard display of golfers' handicaps</li>
+            <li>Data can be manipulated through the GUI or by directly editing the excel sheet</li>
+            <li>Can easily export data as an xlsx file or a docx file, sorted according to handicap, first name, or last name</li>
+        </ul>
+        
     </div>
 
     <div id="whatHCP">
