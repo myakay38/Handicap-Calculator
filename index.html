@@ -61,8 +61,13 @@
     }
 
     #dataPics {
-        padding: 0;
-        padding-top: 1em;
+        display: grid;
+        grid-auto-flow: row;
+        gap: 0.5em;
+        align-content: center;
+        justify-content: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
 </style>
@@ -98,6 +103,7 @@
 
     <div id="dataMgmt">
         <div id="dataPics">
+            <img id="dataImg" src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
             <img id="dataImg" src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
         </div>
         
